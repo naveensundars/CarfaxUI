@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+}
+
+.iconsSvg {
+    width: 18px;
+    height: 18px;
+}
+
+/** login Page start**/
+.LoginPage {
+    display: flex;
+    height: 100vh;
+}
+
+.pageLeft {
+    width: 60%;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 6px 0px #d5d5d5
+}
+
+.pageLeft .imgArea, .formArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.pageRight {
+    width: 40%;
+    position: relative;
+}
+
+.formArea, form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.formArea h2 {
+    margin-bottom: 16px;
+}
+
+.logoAreaLog {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.logoAreaLog img {
+    width: 150px;
+}
+
+.inputFrm input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    padding-left: 32px;
+}
+
+.inputFrm {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.inputFrm .iconsSvg {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+.LogBtn {
+    padding: 8px 32px;
+    margin-top: 24px;
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #1a73e8;
+}
+
+.btnFooter {
+    text-align: center;
+}
+
+.checkBoxArea {
+    padding: 0px 16px;
+    font-size: 12px;
+    color: #858585;
+}
+
+.checkBoxArea {
+    display: flex;
+    width: 100%;
+}
+
+.checkBoxArea>div {
+    width: 50%;
+}
+
+.rememberBox {
+    text-align: start;
+}
+
+.forgetPass {
+    text-align: end;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/** login Page start**/
