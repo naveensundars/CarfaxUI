@@ -1,5 +1,22 @@
+@font-face {
+    font-family: "roboto-regular";
+    src: url("../fonts/roboto-regular.eot");
+    src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular.svg#roboto-regular") format("svg"), url("../fonts/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../fonts/roboto-bold.eot");
+    src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold.svg#roboto-bold") format("svg"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
+    font-family: "roboto-regular";
 }
 
 .iconsSvg {
@@ -7,7 +24,118 @@ body {
     height: 18px;
 }
 
+.row {
+    margin: 0;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+header {
+    height: 40px;
+    background-color: #1a73e8;
+    position: sticky;
+    top: 0px;
+    z-index: 150;
+    color: #ffffff;
+    padding: 0px 16px;
+    display: flex;
+}
+
+
+/** footer **/
+
+footer {
+    height: 20px;
+    background-color: #f8f9fb;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    padding: 0px 16px;
+}
+
+footer p {
+    font-size: 10px;
+    color: rgba(51, 51, 51, 1);
+    line-height: 20px;
+}
+
+footer p span {
+    font-weight: 600;
+}
+
+.footerLis li {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    margin-left: 6px;
+}
+
+
+/** footer **/
+
+.rightsideArea {
+    margin-left: auto;
+    padding-top: 6px;
+}
+
+.rightsideArea ul li {
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+}
+
+.rightsideArea ul li span {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #f75858;
+    position: absolute;
+    top: -5px;
+    left: 9px;
+}
+
+.userProfile p {
+    font-size: 13px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -4px;
+}
+
+.userProfile img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-right: 4px;
+}
+
+.userProfile>div {
+    display: flex;
+}
+
+.userProfile label {
+    margin-bottom: 0px;
+    font-size: 10px;
+    position: relative;
+    top: -6px;
+}
+
+.rightsideArea img.iconsSvg {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: -8px;
+    cursor: pointer;
+}
+
+
 /** login Page start**/
+
 .LoginPage {
     display: flex;
     height: 100vh;
@@ -20,11 +148,18 @@ body {
     box-shadow: 0px 0px 6px 0px #d5d5d5
 }
 
-.pageLeft .imgArea, .formArea {
+.pageLeft .imgArea,
+.formArea {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.imgArea img {
+    width: 100%;
+    height: auto;
+    max-width: 50%;
 }
 
 .pageRight {
@@ -32,13 +167,22 @@ body {
     position: relative;
 }
 
-.formArea, form {
+.formArea,
+form {
     width: 70%;
     margin: 0 auto;
 }
 
 .formArea h2 {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+    font-size: 28px;
+}
+
+.logoArea h1 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 38px;
+    margin: 0;
 }
 
 .logoAreaLog {
@@ -114,4 +258,118 @@ a {
     background-color: transparent;
 }
 
+
 /** login Page start**/
+
+
+/** container-fluidInner start **/
+
+.container-fluidInner {
+    display: flex;
+}
+
+.leftsideBar {
+    width: 200px;
+    border-right: 1px solid #e1e1e1;
+    height: calc(100vh - 60px);
+}
+
+.mainBody {
+    width: calc(100% - 200px);
+}
+
+.mainBodyInner {
+    padding: 16px;
+    height: calc(100vh - 77px);
+    overflow: auto;
+}
+
+
+/** container-fluidInner end **/
+
+
+/** left side bar **/
+
+.menuArea {
+    height: calc(100vh - 150px);
+    overflow: auto;
+}
+
+.menuArea li .iconsSvg {
+    width: 16px;
+    height: 16px;
+}
+
+.menuArea ul {
+    list-style: none;
+}
+
+.menuArea li {
+    padding: 4px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.menuArea li:hover,
+.menuArea li .nav-link.active {
+    background-color: #f8f9fb;
+}
+
+.menuArea li .nav-link,
+.menuArea li a {
+    text-decoration: none;
+    display: flex;
+    margin: 0px;
+    color: #333333;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.menuArea li img {
+    position: absolute;
+    top: 7px;
+}
+
+.menuArea li p {
+    margin: 0px;
+    margin-left: 26px;
+    color: #333333;
+    font-size: 13px;
+    position: relative;
+    width: 100%;
+}
+
+.menuArea li p span {
+    position: absolute;
+    right: 10px;
+}
+
+
+/** left side bar **/
+
+
+/** pdf reader start **/
+
+.pdfreaderArea {
+    width: 100%;
+    height: calc(100vh - 20px);
+    position: relative;
+}
+
+.pdfReadInner {
+    height: calc(100vh - 20px);
+}
+
+.draggableArea {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+}
+
+
+/** pdf reader end **/
