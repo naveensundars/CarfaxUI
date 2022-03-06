@@ -11,45 +11,65 @@
 </head>
 
 <body>
-    <div class="LoginPage">
-        <div class="pageLeft">
-            <div class="imgArea">
-                <img src="./images/logImg.svg">
-            </div>
+    <header>
+        <div class="logoArea">
+            <h1>Carfax</h1>
         </div>
-        <div class="pageRight">
-            <div class="logoAreaLog">
-                <img src="./images/logo-dark.png">
-            </div>
-            <div class="formArea">
+        <div class="rightsideArea">
+            <ul>
+                <li class="userProfile">
+                    <div>
+                        <img src="./images/profile.jpg">
+                        <p> Amith Kumar A<br>
+                            <label class="profilePosition">Accounts Manager</label>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/icons.svg#logout" class="iconsSvg" />
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container-fluidInner">
+        <div class="leftsideBar">
+            <div class="menuArea innerScrollBar">
+                <ul>
+                    <li class="activeMenu">
+                        <a href="index.html">
+                            <img src="./images/icons.svg#dashboard" class="iconsSvg" />
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdfreader.html">
+                            <p>Pdf Reader</p>
+                        </a>
+                    </li>
 
-                <form action="" method="POST">
-                    <h2>Sign Up</h2>
-                    <div class="inputFrm">
-                        <img src="./images/icons.svg#profile" class="iconsSvg" />
-                        <input type="text" name="username" placeholder="Login id">
-                    </div>
-                    <div class="inputFrm">
-                        <img src="./images/icons.svg#lock" class="iconsSvg" />
-                        <input type="password" name="password" placeholder="Password">
-                    </div>
-                    <div class="checkBoxArea">
-                        <div class="rememberBox">
-                            <label class="checkbox">
-                                <input type="checkbox" />
-                                <span class="default"></span>
-                                Remember me
-                            </label>
-                        </div>
-                        <div class="forgetPass"><a href="#">Forgot?</a></div>
-                    </div>
-                    <div class="btnFooter">
-                        <button type="submit" class="LogBtn">Log in</button>
-                    </div>
-                </form>
+                </ul>
             </div>
         </div>
+        <div class="mainBody"></div>
     </div>
+    <footer>
+        <div class="row">
+            <div class="col-lg-6 text-left">
+                <p>&#169; 2021 All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 text-right">
+                <ul class="footerLis">
+                    <li>
+                        <p>Location: <span>Pondicherry</span></p>
+                    </li>
+                    <li>
+                        <p>Status: <span>Online</span></p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

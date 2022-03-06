@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carfax</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="pdfreaderArea" id="pdfreaderArea">
+        <div class="pdfReadInner">
+            <iframe src="sample.pdf" width="100%" height="100%"></iframe>
+        </div>
+        <div id="draggable" class="ui-widget-content draggableArea">
+            <p>Drag me around</p>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-lg-6 text-left">
+                <p>&#169; 2021 All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 text-right">
+                <ul class="footerLis">
+                    <li>
+                        <p>Location: <span>Pondicherry</span></p>
+                    </li>
+                    <li>
+                        <p>Status: <span>Online</span></p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#draggable").draggable({
+                containment: "pdfreaderArea"
+            });
+        });
+    </script>
+
+</body>
+
+</html>
