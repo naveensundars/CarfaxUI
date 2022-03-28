@@ -367,8 +367,112 @@ a {
     bottom: 16px;
     left: 16px;
     z-index: 10;
-    width: 200px;
-    height: 200px;
+    border-left: 1px solid #494848;
+    height: 300px;
+    max-width: 550px;
+    border-radius: 5px;
+}
+
+.dragInner,
+.fromAreas,
+.fromAreasInnerFrom {
+    display: flex;
+}
+
+.dragRight {
+    width: calc(100% - 150px);
+}
+
+.dragLeft {
+    width: 150px;
+    border-right: 1px solid #e1e1e1;
+    padding: 10px 5px;
+}
+
+.dragTab {
+    margin: 0;
+    padding: 0;
+}
+
+.dragTab li {
+    display: inline;
+    font-size: 13px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dragTab li.active {
+    background-color: #e1e1e1;
+}
+
+.dragRight hr {
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.fromAreasInner {
+    width: 50%;
+}
+
+.fromAreas {
+    width: calc(100% - 25px);
+    padding: 16px 8px;
+    gap: 16px;
+    margin: auto;
+}
+
+.fromAreasInnerFrom {
+    margin-bottom: 8px;
+}
+
+.fromAreasInnerFrom label {
+    width: 70px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.fromAreasInnerFrom input {
+    width: calc(100% - 70px);
+    height: 25px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #e1e1e1;
+}
+
+th {
+    font-size: 13px;
+    padding: 6px;
+}
+
+.tabInnerDrag button {
+    font-size: 12px;
+    padding: 2px 12px;
+    margin: 8px;
+}
+
+tr td {
+    font-weight: 100;
+    font-size: 13px;
+    padding: 6px;
+}
+
+.innerTabs {
+    display: none;
+}
+
+.innerTabs.active {
+    display: block;
+}
+
+.ownerTab table {
+    margin: 5px;
 }
 
 
