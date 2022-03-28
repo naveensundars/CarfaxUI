@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carfax</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootsthap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css">
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -17,7 +17,125 @@
             <iframe src="sample.pdf" width="100%" height="100%"></iframe>
         </div>
         <div id="draggable" class="ui-widget-content draggableArea">
-            <p>Drag me around</p>
+            <div class="dragInner">
+                <div class="dragLeft"></div>
+                <div class="dragRight">
+                    <ul class="dragTab">
+                        <li class="active">Report</li>
+                        <li>Owner / Parties</li>
+                        <li>Passenger</li>
+                        <li>Vechicle Identification</li>
+                    </ul>
+                    <hr></hr>
+                    <div class="tabInnerDrag">
+                        <div class="innerTabs reportTab">
+                            <form class="fromAreas">
+                                <div class="fromAreasInner">
+                                    <div class="fromAreasInnerFrom">
+                                        <label>Report</label>
+                                        <input type="text" />
+                                    </div>
+                                    <div class="fromAreasInnerFrom">
+                                        <label>Report Type</label>
+                                        <input type="text" />
+                                    </div>
+                                    <div class="fromAreasInnerFrom">
+                                        <label>Crash Date</label>
+                                        <input type="text" />
+                                    </div>
+                                    <div class="fromAreasInnerFrom">
+                                        <label>State</label>
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                                <div class="fromAreasInner">
+                                    <div class="fromAreasInnerFrom">
+                                        <label>Agency</label>
+                                        <input type="text" />
+                                    </div>
+                                    <div class="fromAreasInnerFrom">
+                                        <label>City</label>
+                                        <input type="text" />
+                                    </div>
+                                    <div class="fromAreasInnerFrom">
+                                        <label>Counthy</label>
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="innerTabs ownerTab active">
+                            <button>ADD</button>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Si.No</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Insruance Company</th>
+                                        <th>Insruance Company</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>First Name</td>
+                                        <td>Last Name</td>
+                                        <td>Insruance Company</td>
+                                        <td>Insruance Company</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="innerTabs ownerTab">
+                            <button>ADD</button>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Si.No</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Insruance Company</th>
+                                        <th>Insruance Company</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>First Name</td>
+                                        <td>Last Name</td>
+                                        <td>Insruance Company</td>
+                                        <td>Insruance Company</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="innerTabs ownerTab">
+                            <button>ADD</button>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Si.No</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Insruance Company</th>
+                                        <th>Insruance Company</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>First Name</td>
+                                        <td>Last Name</td>
+                                        <td>Insruance Company</td>
+                                        <td>Insruance Company</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
@@ -40,7 +158,7 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootsthap.min.js"></script>
     <script>
         $(document).ready(function() {
             $("#draggable").draggable({
